@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=st-256color
+Comment=simple-terminal emulator for X
+Icon=utilities-terminal
+Exec=st
+Terminal=false
+Categories=System;TerminalEmulator
