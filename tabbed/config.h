@@ -27,12 +27,12 @@ static Bool npisrelative  = False;
  * Xresources preferences to load at startup
  */
 ResourcePref resources[] = {
-		{ "background", STRING,  &normbgcolor },
-		{ "foreground", STRING,  &normfgcolor },
-		{ "color0",     STRING,  &selbgcolor },
-		{ "color2",     STRING,  &selfgcolor },
-		{ "color1",     STRING,  &urgbgcolor },
-		{ "color3",     STRING,  &urgfgcolor },
+		{ "background",     STRING,  &normbgcolor },
+		{ "foreground",     STRING,  &normfgcolor },
+		{ "alt_background", STRING,  &selbgcolor },
+		{ "alt_foreground", STRING,  &selfgcolor },
+		{ "color1",         STRING,  &urgbgcolor },
+		{ "color3",         STRING,  &urgfgcolor },
 };
 
 
