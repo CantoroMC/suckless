@@ -448,7 +448,7 @@ static const Rule rules[] = {
 // Layouts
 static const int focusonwheel     = 0;
 static const float mfact          = 0.5;  /* factor of master area size [0.05..0.95] */
-static const float smfact         = 0.00; /* factor of tiled clients [0.00..0.95] */
+static const float smfact         = 0.00; /* factor of tiled clients [-0.50..0.95] */
 static const int nmaster          = 1;    /* number of clients in master area */
 static const unsigned int minwsz  = 20;   /* Minimal height of a client for smfact */
 static const int resizehints      = 0;    /* 1 means respect size hints in tiled resizals */
@@ -2733,7 +2733,7 @@ setsmfact(const Arg *arg) {
 	if(!arg || !selmon->lt[selmon->sellt]->arrange)
 		return;
 	sf = arg->sf < 1.0 ? arg->sf + selmon->smfact : arg->sf - 1.0;
-	if (sf < 0 || sf > 0.9)
+	if (sf < -0.5 || sf > 0.9)
 		return;
 	selmon->smfact = sf;
 	arrange(selmon);
