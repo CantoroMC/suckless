@@ -413,6 +413,7 @@ static const Rule rules[] = {
 	{ "imagewriter",                  NULL,       NULL,               0,       1,          1,          -1,      0 },
 	{ "Lxappearance",                 NULL,       NULL,               0,       1,          1,          -1,      0 },
 	{ "MPlayer",                      NULL,       NULL,               0,       1,          1,          -1,      0 },
+	{ "mpv",                          NULL,       NULL,               0,       0,          0,          -1,      0 },
 	{ "Nitrogen",                     NULL,       NULL,               0,       1,          1,          -1,      0 },
 	{ "ParaView",                     NULL,       NULL,               0,       1,          1,          -1,      0 },
 	{ "Parcellite",                   NULL,       NULL,               0,       1,          1,          -1,      0 },
@@ -436,7 +437,6 @@ static const Rule rules[] = {
 	{ "MATLAB R2021a - academic use", NULL,       "Help",             0,       0,          1,          -1,      0 },
 	{ "MATLAB R2021a - academic use", NULL,       "Preferences",      0,       1,          1,          -1,      0 },
 	{ "Transmission-gtk",             NULL,       NULL,               1 << 8,  1,          1,          -1,      0 },
-	{ "mpv",                          NULL,       NULL,               1 << 4,  0,          0,          -1,      0 },
 	{ NULL,                           NULL,       "MATLAB",           1 << 1,  0,          0,          -1,      0 },
 	{ NULL,                           NULL,       "yakuake",          0,       1,          1,          -1,      'y' },
 	{ NULL,                           NULL,       "cmus",             0,       1,          1,          -1,      'm' },
@@ -543,6 +543,7 @@ static Key keys[] = {
 	{ MODKEY|ShiftMask|ControlMask, -1,         XK_m,            togglescratch,  {.v = cmuscmd } },
 	{ MODKEY|ShiftMask|ControlMask, -1,         XK_n,            togglescratch,  {.v = ncmpcppcmd } },
 	{ MODKEY|ShiftMask|ControlMask, -1,         XK_o,            togglescratch,  {.v = orgendacmd } },
+	// Mpv/Mpc namespace
 	{ MODKEY,                       XK_p,       XK_h,            spawn,          SHCMD("mpc prev") },
 	{ MODKEY,                       XK_p,       XK_l,            spawn,          SHCMD("mpc next") },
 	{ MODKEY,                       XK_p,       XK_j,            spawn,          SHCMD("mpc play") },
