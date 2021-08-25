@@ -50,7 +50,7 @@ static const char unknown_str[] = "n/a";
 
 static const struct arg args[] = {
 	/* function          bg         fg         format           argument*/
-	{ mpd_stat,          "#32302f", "#f9f5d7", " %s ",          NULL},
+	{ mpd_stat,          "#8ec07c", "#f9f5d7", " %s ",          NULL},
 	{ ram_perc,          "#2c3836", "#fbf1c7", " \uf2db %s%% ", NULL},
 	{ swap_perc,         "#2c3836", "#fbf1c7", "(%s%%)",        NULL},
 	{ cpu_perc,          "#2c3836", "#fbf1c7", " \uf085 %s%% ", NULL},
@@ -62,11 +62,11 @@ static const struct arg args[] = {
 	{ temp,              "#2c3836", "#fbf1c7", "%s°C ",         "/sys/bus/platform/devices/coretemp.0/hwmon/hwmon4/temp5_input"},
 	{ ipv4,              NULL,      NULL,      " \uf502 %s ",   "wlan0"},
 	{ wifi_perc,         NULL,      NULL,      "(%s%%) ",       "wlan0"},
-	{ run_command,       "#458588", "#fbf1c7", " %s ",          "sls-volume"},
-	{ battery_perc,      "#458588", "#fbf1c7", "\uf60b %s%% ",  "BAT0"},
-	{ battery_state,     "#458588", "#fbf1c7", "(%s",           "BAT0"},
-	{ battery_remaining, "#458588", "#fbf1c7", "%s) ",          "BAT0"},
-	{ run_command,       "#458588", "#fbf1c7", "%s ",           "sls-backlight"},
+	{ run_command,       "#b8bb26", "#fbf1c7", " %s ",          "sls-volume"},
+	{ battery_perc,      "#b8bb26", "#fbf1c7", "\uf60b %s%% ",  "BAT0"},
+	{ battery_state,     "#b8bb26", "#fbf1c7", "(%s",           "BAT0"},
+	{ battery_remaining, "#b8bb26", "#fbf1c7", "%s) ",          "BAT0"},
+	{ run_command,       "#b8bb26", "#fbf1c7", "%s ",           "sls-backlight"},
 	{ uptime,            NULL,      NULL,      " \ufa1a %s ",   NULL},
 	{ keymap,            NULL,      NULL,      " \uf80b %s ",   NULL},
 	{ datetime,          "#2c3836", "#fbf1c7", " \uf455 %s ",   "%T %e %a %b"},
