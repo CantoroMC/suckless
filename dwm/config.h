@@ -243,8 +243,8 @@ static Key keys[] = {
 	{ MODKEY|ShiftMask,             -1,         XK_Delete,       quit,           {0} },
 
 	{ MODKEY,                       -1,         XK_Print,        spawn,          SHCMD("scrotwp -fd") },
-	{ MODKEY|ShiftMask,             -1,         XK_Print,        quit,           SHCMD("scrotwp -sd") },
-	{ MODKEY|ControlMask,           -1,         XK_Print,        quit,           SHCMD("scrotwp -wd") },
+	{ MODKEY|ShiftMask,             -1,         XK_Print,        spawn,          SHCMD("scrotwp -sd") },
+	{ MODKEY|ControlMask,           -1,         XK_Print,        spawn,          SHCMD("scrotwp -wd") },
 	/*                              Arrows                                             */
 	{ MODKEY,                       -1,         XK_Down,         moveresize,     {.v = "0x 25y 0w 0h"  } },
 	{ MODKEY,                       -1,         XK_Up,           moveresize,     {.v = "0x -25y 0w 0h" } },
