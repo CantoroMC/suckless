@@ -554,8 +554,8 @@ static Key keys[] = {
 	{ MODKEY,                       XK_p,       XK_z,            spawn,          SHCMD("mpc random") },
 	{ MODKEY,                       XK_p,       XK_y,            spawn,          SHCMD("mpc single") },
 	{ MODKEY,                       XK_p,       XK_m,            spawn,          SHCMD(TERMINAL " -e pulsemixer") },
-	{ MODKEY,                       XK_p,       XK_q,            spawn,          SHCMD("mpv_bulk_quit") },
-	{ MODKEY,                       XK_p,       XK_t,            spawn,          SHCMD("mpv_bulk_toggle") },
+	{ MODKEY,                       XK_p,       XK_q,            spawn,          SHCMD("mpv_bulk q") },
+	{ MODKEY,                       XK_p,       XK_t,            spawn,          SHCMD("mpv_bulk p") },
 	/*                              Surrounding Keys                                     */
 	// Master/Stack Vertical Layout
 	{ MODKEY,                       -1,         XK_Tab,          cyclelayout,    {.i = +1 } },
