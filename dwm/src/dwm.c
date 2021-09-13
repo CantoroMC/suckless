@@ -616,7 +616,7 @@ static Key keys[] = {
 	{ 0, -1, XF86XK_AudioRaiseVolume,  spawn,  SHCMD("pactl set-sink-volume @DEFAULT_SINK@ +5%") },
 	{ 0, -1, XF86XK_MonBrightnessDown, spawn,  SHCMD("xbacklight -dec 5") },
 	{ 0, -1, XF86XK_MonBrightnessUp,   spawn,  SHCMD("xbacklight -inc 5") },
-	{ 0, -1, XF86XK_Display,           spawn,  SHCMD("monitor_handler") },
+	{ 0, -1, XF86XK_Display,           spawn,  SHCMD("xrander") },
 	{ 0, -1, XF86XK_Search,            spawn,  SHCMD(TERMINAL " -e nnn") },
 	{ 0, -1, XF86XK_Explorer,          spawn,  SHCMD("vivaldi-stable") },
 	{ 0, -1, XF86XK_Calculator,        spawn,  SHCMD(TERMINAL " -e ghci") },
