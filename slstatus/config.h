@@ -50,7 +50,7 @@ static const char unknown_str[] = "n/a";
 
 static const struct arg args[] = {
 	/* function          bg         fg         format           argument*/
-	{ mpd_stat,          "#66ff66", "#f2f2f2", " %s ",          NULL},
+	{ mpd_stat,          "#66ff66", "#000000", " %s ",          NULL},
 	{ ram_perc,          "#396bd7", "#f2f2f2", " \uf2db %s%% ", NULL},
 	{ swap_perc,         "#396bd7", "#f2f2f2", "(%s%%)",        NULL},
 	{ cpu_perc,          "#396bd7", "#f2f2f2", " \uf085 %s%% ", NULL},
