@@ -54,7 +54,7 @@ static const struct arg args[] = {
 	{ ram_perc,          "#396bd7", "#f2f2f2", " \uf2db %s%% ", NULL},
 	{ swap_perc,         "#396bd7", "#f2f2f2", "(%s%%)",        NULL},
 	{ cpu_perc,          "#396bd7", "#f2f2f2", " \uf085 %s%% ", NULL},
-	{ cpu_freq,          "#396bd7", "#f2f2f2", "(%sHz) ",       NULL},
+	{ cpu_freq,          "#396bd7", "#f2f2f2", "(%sHz)",        NULL},
 	{ temp,              "#396bd7", "#f2f2f2", " \uf8c7 %s°C ", "/sys/bus/platform/devices/thinkpad_hwmon/hwmon/hwmon5/temp1_input"},
 	{ ipv4,              NULL,      NULL,      " \uf502 %s ",   "wlan0"},
 	{ wifi_perc,         NULL,      NULL,      "(%s%%) ",       "wlan0"},
