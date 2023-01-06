@@ -17,10 +17,7 @@ options:
 .c.o:
 	$(CC) -c $(CFLAGS) $<
 
-config.h:
-	cp config.def.h $@
-
-$(OBJ): arg.h config.h config.mk drw.h
+$(OBJ): arg.h dmenu.h config.mk drw.h
 
 dmenu: dmenu.o drw.o util.o
 	$(CC) -o $@ dmenu.o drw.o util.o $(LDFLAGS)
@@ -39,8 +36,8 @@ dist: clean
 		Makefile \
 		config.mk \
 		arg.h \
-		config.def.h \
 		drw.h \
+		dmenu.h \
 		util.h \
 		../dmenu_path \
 		../dmenu_run \
