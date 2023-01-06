@@ -23,13 +23,10 @@ COM =\
 all: slstatus
 
 $(COM:=.o): config.mk $(REQ:=.h)
-slstatus.o: slstatus.c slstatus.h arg.h config.h config.mk $(REQ:=.h)
+slstatus.o: slstatus.c slstatus.h arg.h config.mk $(REQ:=.h)
 
 .c.o:
 	$(CC) -o $@ -c $(CPPFLAGS) $(CFLAGS) $<
-
-config.h:
-	cp config.def.h $@
 
 slstatus: slstatus.o $(COM:=.o) $(REQ:=.o)
 	$(CC) -o $@ $(LDFLAGS) $(COM:=.o) $(REQ:=.o) slstatus.o $(LDLIBS)
@@ -38,11 +35,19 @@ clean:
 	rm -f slstatus slstatus.o $(COM:=.o) $(REQ:=.o)
 
 dist:
-	rm -rf "slstatus-$(VERSION)"
 	mkdir -p "slstatus-$(VERSION)/components"
-	cp -R LICENSE Makefile README config.mk config.def.h \
-	      arg.h slstatus.c $(COM:=.c) $(REQ:=.c) $(REQ:=.h) \
-	      slstatus.1 "slstatus-$(VERSION)"
+	cp -R \
+		Makefile \
+		slstatus.c \
+		$(COM:=.c) \
+		$(REQ:=.c) \
+		config.mk \
+	  arg.h \
+		$(REQ:=.h) \
+		../LICENSE \
+		../README.md \
+	  ../slstatus.1 \
+		"slstatus-$(VERSION)"
 	tar -cf - "slstatus-$(VERSION)" | gzip -c > "slstatus-$(VERSION).tar.gz"
 	rm -rf "slstatus-$(VERSION)"
 
@@ -51,7 +56,7 @@ install: all
 	cp -f slstatus "$(DESTDIR)$(PREFIX)/bin"
 	chmod 755 "$(DESTDIR)$(PREFIX)/bin/slstatus"
 	mkdir -p "$(DESTDIR)$(MANPREFIX)/man1"
-	cp -f slstatus.1 "$(DESTDIR)$(MANPREFIX)/man1"
+	cp -f ../slstatus.1 "$(DESTDIR)$(MANPREFIX)/man1"
 	chmod 644 "$(DESTDIR)$(MANPREFIX)/man1/slstatus.1"
 
 uninstall:

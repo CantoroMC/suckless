@@ -1,29 +1,5 @@
 /* See LICENSE file for copyright and license details. */
-#include <errno.h>
-#include <signal.h>
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
-#include <time.h>
-#include <X11/Xlib.h>
-
-#include "arg.h"
 #include "slstatus.h"
-#include "util.h"
-
-struct arg {
-	const char *(*func)();
-	const char *background_color;
-	const char *foreground_color;
-	const char *fmt;
-	const char *args;
-};
-
-char buf[1024];
-static volatile sig_atomic_t done;
-static Display *dpy;
-
-#include "config.h"
 
 static void
 terminate(const int signo)

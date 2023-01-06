@@ -32,7 +32,6 @@ dist: clean
 	mkdir -p dmenu-$(VERSION)
 	cp
 		$(SRC) \
-		dmenu-$(VERSION) \
 		Makefile \
 		config.mk \
 		arg.h \
@@ -44,7 +43,8 @@ dist: clean
 		../dmenu.1 \
 		../stest.1\
 		../LICENSE \
-		../README.md
+		../README.md \
+		dmenu-$(VERSION)
 	tar -cf dmenu-$(VERSION).tar dmenu-$(VERSION)
 	gzip dmenu-$(VERSION).tar
 	rm -rf dmenu-$(VERSION)

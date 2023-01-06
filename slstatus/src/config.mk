@@ -17,4 +17,4 @@ LDFLAGS  = -L$(X11LIB) -s
 LDLIBS   = -lX11 -lmpdclient
 
 # compiler and linker
-CC = cc
+CC = gcc
