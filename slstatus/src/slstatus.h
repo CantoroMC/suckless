@@ -14,8 +14,7 @@
 #define MAXLEN 2048
 // }}}
 
-
-// 
+//  Enums, structs and unions {{{
 struct arg {
 	const char *(*func)();
 	const char *background_color;
@@ -23,7 +22,7 @@ struct arg {
 	const char *fmt;
 	const char *args;
 };
-
+// }}}
 
 // Functions {{{
 /* battery */
