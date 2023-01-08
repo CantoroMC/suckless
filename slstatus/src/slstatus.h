@@ -146,22 +146,22 @@ static Display *dpy;
 
 static const struct arg args[] = {
 	/* function          bg         fg         format           argument*/
-	{ mpd_stat,          "#66ff66", "#000000", " %s ",          NULL},
-	{ ram_perc,          "#396bd7", "#f2f2f2", " \uf2db %s%% ", NULL},
-	{ swap_perc,         "#396bd7", "#f2f2f2", "(%s%%)",        NULL},
-	{ cpu_perc,          "#396bd7", "#f2f2f2", " \uf085 %s%% ", NULL},
-	{ cpu_freq,          "#396bd7", "#f2f2f2", "(%sHz)",        NULL},
-	{ temp,              "#396bd7", "#f2f2f2", " \uf8c7 %s°C ", "/sys/bus/platform/devices/thinkpad_hwmon/hwmon/hwmon5/temp1_input"},
+	{ mpd_stat,          "#76946a", "#1f1f28", " %s ",          NULL},
+	{ ram_perc,          "#223249", "#dcd7ba", " \uf2db %s%% ", NULL},
+	{ swap_perc,         "#223249", "#dcd7ba", "(%s%%)",        NULL},
+	{ cpu_perc,          "#223249", "#dcd7ba", " \uf085 %s%% ", NULL},
+	{ cpu_freq,          "#223249", "#dcd7ba", "(%sHz)",        NULL},
+	{ temp,              "#223249", "#dcd7ba", " \uf8c7 %s°C ", "/sys/bus/platform/devices/thinkpad_hwmon/hwmon/hwmon5/temp1_input"},
 	{ ipv4,              NULL,      NULL,      " \uf502 %s ",   "wlan0"},
 	{ wifi_perc,         NULL,      NULL,      "(%s%%) ",       "wlan0"},
-	{ run_command,       "#66ccff", "#f2f2f2", " %s ",          "sls-volume"},
-	{ battery_perc,      "#66ccff", "#f2f2f2", "\uf60b %s%% ",  "BAT0"},
-	{ battery_state,     "#66ccff", "#f2f2f2", "(%s",           "BAT0"},
-	{ battery_remaining, "#66ccff", "#f2f2f2", "%s) ",          "BAT0"},
-	{ run_command,       "#66ccff", "#f2f2f2", "%s ",           "sls-backlight"},
+	{ run_command,       "#7e9cd8", "#dcd7ba", " %s ",          "sls-volume"},
+	{ battery_perc,      "#7e9cd8", "#dcd7ba", "\uf60b %s%% ",  "BAT0"},
+	{ battery_state,     "#7e9cd8", "#dcd7ba", "(%s",           "BAT0"},
+	{ battery_remaining, "#7e9cd8", "#dcd7ba", "%s) ",          "BAT0"},
+	{ run_command,       "#7e9cd8", "#dcd7ba", "%s ",           "sls-backlight"},
 	{ uptime,            NULL,      NULL,      " \ufa1a %s ",   NULL},
 	{ keymap,            NULL,      NULL,      " \uf80b %s ",   NULL},
-	{ datetime,          "#2a2a2a", "#f2f2f2", " \uf455 %s ",   "%T %e %a %b"},
+	{ datetime,          "#dcd7ba", "#7fb4ca", " \uf455 %s ",   "%T %e %a %b"},
 	/* function          bg         fg         format           argument*/
 };
 // }}}
