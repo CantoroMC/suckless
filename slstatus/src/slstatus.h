@@ -161,7 +161,7 @@ static const struct arg args[] = {
 	{ run_command,       "#7e9cd8", "#dcd7ba", "%s ",           "sls-backlight"},
 	{ uptime,            NULL,      NULL,      " \ufa1a %s ",   NULL},
 	{ keymap,            NULL,      NULL,      " \uf80b %s ",   NULL},
-	{ datetime,          "#dcd7ba", "#7fb4ca", " \uf455 %s ",   "%T %e %a %b"},
+	{ datetime,          "#dcd7ba", "#1f1f28", " \uf455 %s ",   "%T %e %a %b"},
 	/* function          bg         fg         format           argument*/
 };
 // }}}
